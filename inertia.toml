@@ -1,0 +1,17 @@
+version = "test"
+project-name = "inertia-deploy-test"
+build-type = "docker-compose"
+build-file-path = "docker-compose.yml"
+
+[remotes]
+  [remotes.local]
+    name = "local"
+    IP = "127.0.0.1"
+    user = "root"
+    pemfile = "/Users/didil/work/projects/go/src/github.com/ubclaunchpad/inertia/test/keys/id_rsa"
+    branch = "master"
+    ssh-port = "69"
+    [remotes.local.daemon]
+      port = "4303"
+      token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2lkIjoiIiwidXNlciI6Im1hc3RlciIsImFkbWluIjp0cnVlLCJleHBpcnkiOiIwMDAxLTAxLTAxVDAwOjAwOjAwWiJ9.BtWKKZsdqGXDoTZPV6id5PkS0VEVUaLzIangLr2c2XM"
+      webhook-secret = "lUUFd6M7EwhIol5r4Z17ys8L_5qEiRTjS84BBlU1oVA="

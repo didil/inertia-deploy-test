@@ -5,4 +5,4 @@ services:
     image: python
     command: ["python", "-m", "http.server", "80"]
     ports:
-     - "80:80"
+     - "3000:80"
